@@ -1,4 +1,4 @@
-import { RouterProvider, createHashRouter  } from "react-router-dom";
+import { RouterProvider, createBrowserRouter  } from "react-router-dom";
 
 import AppLayout from "./layouts/app-layout";
 import ProtectedRoute from "./components/protected-route";
@@ -14,7 +14,7 @@ import JobPage from "./pages/job";
 
 import "./App.css";
 
-const router = createHashRouter ([
+const router = createBrowserRouter ([
   {
     element: <AppLayout />,
     children: [
